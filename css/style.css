@@ -45,6 +45,7 @@ nav .btn-default{
 
 /* Jumbotron */
 
+/* testo jumbotron */
 .ms_jumbotron{
     background-image: url(../img/jumbo.svg);
     background-size: cover;
@@ -58,4 +59,21 @@ nav .btn-default{
 
 .testo_jumbo p{
     font-size: 2rem;
+}
+
+/* riquadro jumbotron */
+
+.riquadro_jumbo{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.riquadro_jumbo h2{
+    font-weight: 600;
+}
+
+.riquadro_jumbo  h2:nth-of-type(2){
+    color: blue;
 }
