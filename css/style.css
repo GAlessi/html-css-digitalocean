@@ -1,20 +1,61 @@
 
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    padding: 10px 0;
+}
+
 /* Regole media navbar */
-@media all and (min-width: 768px ) and (max-width: 992px) {
+@media all and (min-width: 768px ) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none!important;
     }
-}
 
-@media all and (min-width: 768px ) and (max-width: 992px) {
     .navbar-toggle {
         display: block!important;
-        float: right;
+        margin-right: 0;
     }
 }
 
-@media all and (min-width: 768px ) and (max-width: 992px) {
-    .navbar-header {
-    width: 100%;
+@media all and (max-width: 991px) {
+    .navbar-header{
+        width: 100%;
     }
+}
+
+
+/* nav */
+#logo{
+    max-width: 200px;
+    vertical-align: middle;
+    margin-right: 100px;
+}
+
+@media all and (min-width: 991px) and (max-width: 1199px){
+    #logo{
+        max-width: 100px;
+        margin-right: 0;
+    }
+}
+
+nav .btn-default{
+    color: rgb(59,140,255);
+    border-color: rgb(59,140,255);
+}
+
+/* Jumbotron */
+
+.ms_jumbotron{
+    background-image: url(../img/jumbo.svg);
+    background-size: cover;
+    padding: 130px 0;
+}
+
+.testo_jumbo h1{
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.testo_jumbo p{
+    font-size: 2rem;
 }
