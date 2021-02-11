@@ -1,0 +1,20 @@
+
+/* Regole media navbar */
+@media all and (min-width: 768px ) and (max-width: 992px) {
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+}
+
+@media all and (min-width: 768px ) and (max-width: 992px) {
+    .navbar-toggle {
+        display: block!important;
+        float: right;
+    }
+}
+
+@media all and (min-width: 768px ) and (max-width: 992px) {
+    .navbar-header {
+    width: 100%;
+    }
+}
