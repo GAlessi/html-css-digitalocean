@@ -62,7 +62,7 @@ nav .btn-default{
 /* testo jumbotron */
 .ms_jumbotron{
     background-image: url(../img/jumbo.svg);
-    background-size: cover;
+    background-size: contain;
     padding: 130px 0;
 }
 
@@ -125,16 +125,24 @@ nav .btn-default{
 }
 
 /*regole generali main */
-
 main section{
     padding: 100px 0;
     text-align: center;
 }
 
 main h2{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     margin: 30px 0;
+}
+
+main h4{
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+main h5{
+    line-height: 2rem;
 }
 
 /* Sezione main "configuration" */
@@ -160,21 +168,18 @@ main h2{
     text-align: left;
 }
 
-.contenuto_config h4{
-    font-weight: 700;
-    margin: 20px 0;
-}
-
-.contenuto_config h5{
-    line-height: 2rem;
-}
-
 #configuration img{
     max-height: 40px;
 }
 
 #configuration .row .row:last-child img{
     margin-top:30px;
+}
+
+@media all and (max-width: 991px) {
+    #configuration img{
+        margin-top: 30px;
+    }
 }
 
 /* sezione main design */
@@ -199,4 +204,59 @@ main h2{
 
 .pallini i{
     color: blue;
+}
+
+/* sezione main features */
+.features_content{
+    text-align: left;
+}
+
+/* sezione main services */
+
+#services{
+    background: rgb(35,6,168);
+    background: linear-gradient(0deg, rgba(35,6,168,1) 38%, rgba(39,39,222,1) 67%, rgba(37,0,255,1) 100%);
+    color: white;
+}
+
+.contenitore_tabella{
+    text-align: left;
+    padding: 0 20px;
+}
+
+#services span{
+    display: inline-block;
+}
+
+#services .city, #services .speed{
+    width: 25%;
+    padding: 0 15px;
+}
+
+#services .nome_city{
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+#services .city, #services .nome_city{
+    float: left;
+}
+
+#services .speed{
+    float: right;
+}
+
+#services hr{
+    width: 100%;
+    margin: 31px 0 12px;
+}
+
+#services a{
+    color: rgb(0, 215, 210);
+}
+
+@media all and (min-width: 1199px) {
+    #separatore{
+        display: none;
+    }
 }
