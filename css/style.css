@@ -293,6 +293,62 @@ main h5{
     font-weight: 700;
 }
 
-.team h5:last-child{
+.team h5:nth-child(4){
     font-weight: 500;
+}
+
+/* sezione main start */
+#start{
+    background: rgb(35,6,168);
+    background: linear-gradient(0deg, rgba(35,6,168,1) 38%, rgba(39,39,222,1) 67%, rgba(37,0,255,1) 100%);
+}
+#start h2{
+    color: white;
+}
+
+#start a{
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer{
+    background-color: hsl(220,95%,8%);
+    padding: 50px 0;
+    color: rgb(198,198,198);
+}
+
+footer h5:nth-child(3){
+    opacity: 0.5;
+}
+
+footer .social i{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.social i:first-child{
+    margin-left: 0;
+}
+
+footer a{
+    color: rgb(198,198,198);
+    opacity: 0.5;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+footer ul li:first-child{
+font-size: 18px;
 }
