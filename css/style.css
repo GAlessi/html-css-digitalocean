@@ -19,6 +19,10 @@ p{
     font-size: 2rem;
 }
 
+a{
+    color: rgb(0, 105, 255);
+}
+
 /* Regole media navbar */
 @media all and (min-width: 768px ) and (max-width: 992px) {
     .navbar-collapse.collapse {
@@ -139,6 +143,7 @@ main h2{
 main h4{
     font-weight: 700;
     margin: 20px 0;
+    line-height: 30px;
 }
 
 main h5{
@@ -212,7 +217,6 @@ main h5{
 }
 
 /* sezione main services */
-
 #services{
     background: rgb(35,6,168);
     background: linear-gradient(0deg, rgba(35,6,168,1) 38%, rgba(39,39,222,1) 67%, rgba(37,0,255,1) 100%);
@@ -259,4 +263,36 @@ main h5{
     #separatore{
         display: none;
     }
+}
+
+/* sezione main teams */
+#teams{
+    background-color: #f3f5f9;
+}
+
+#teams .team{
+    display: inline-block;
+    width: 60%;
+    background-color: white;
+    vertical-align: middle;
+    padding: 50px 0;
+    margin: 25px auto;
+}
+
+@media all and (max-width:1199px) {
+    #teams .team{
+        padding: 30px 10px;
+    }
+}
+
+.screen_team > i{
+    vertical-align: middle;
+}
+
+.team h5{
+    font-weight: 700;
+}
+
+.team h5:last-child{
+    font-weight: 500;
 }
