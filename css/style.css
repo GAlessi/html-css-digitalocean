@@ -2,14 +2,21 @@
 /* Regole pagina */
 .grigio{
     color: #5b6987;
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar-default {
     background-color: white;
-    border-color: white;
     padding: 10px 0;
 }
 
+p{
+    font-size: 2rem;
+}
 
 /* Regole media navbar */
 @media all and (min-width: 768px ) and (max-width: 992px) {
@@ -67,10 +74,6 @@ nav .btn-default{
     font-size: 5rem;
 }
 
-p{
-    font-size: 2rem;
-}
-
 /* riquadro jumbotron */
 
 .riquadro_jumbo{
@@ -88,16 +91,18 @@ p{
     color: blue;
 }
 
+.riquadro_jumbo img{
+    max-height: 25px;
+    width: auto;
+    float: left;
+}
 
 /* sezione loghi partners */
 
 .partners{
     background-color: #f3f5f9;
     text-align: center;
-}
-
-.partners p{
-    margin-top: 50px;
+    padding: 60px 0;
 }
 
 .partners img {
@@ -114,5 +119,59 @@ p{
 }
 
 .partners a{
+    display: block;
     font-size: 1.7rem;
+}
+
+/*regole generali main */
+
+main section{
+    padding: 100px 0;
+    text-align: center;
+}
+
+main h2{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* Sezione "configuration" */
+
+#configuration p{
+    margin-bottom: 80px;
+}
+
+#configuration ul{
+    border-left: 1px solid black;
+    list-style-type: none;
+    padding: 0 10px;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: left;
+}
+
+#configuration a{
+    color: #5b6987;
+    font-weight: 500;
+}
+
+.contenuto_config{
+    text-align: left;
+}
+
+.contenuto_config h4{
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.contenuto_config h5{
+    line-height: 2rem;
+}
+
+#configuration img{
+    max-height: 40px;
+}
+
+#configuration .row .row:last-child img{
+    margin-top:30px;
 }
