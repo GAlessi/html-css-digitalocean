@@ -37,6 +37,10 @@ a:hover{
         display: block!important;
         margin-right: 0;
     }
+
+    .collapse.in{
+        display: block!important;
+    }
 }
 
 @media all and (max-width: 992px) {
@@ -361,4 +365,85 @@ footer ul li{
 
 footer ul li:first-child{
 font-size: 18px;
+}
+
+@media all and (max-width: 1199px) {
+    footer ul{
+        margin-top: 30px;
+    }
+}
+
+/* Menù help */
+
+.help{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.help > img{
+    max-width: 100px;
+    height: auto;
+}
+
+#need_help{
+    position: absolute;
+    top: -10px;
+    left: -97px;
+    background-color:rgba(255,255,255,0.5);
+    padding: 20px 15px;
+    border: 1px solid black;
+    border-radius: 15px 25px;
+}
+
+.help .chat{
+    display: none;
+    position: absolute;
+    top: -125px;
+    left: -187px;
+    background-color: rgba(168,168,168,0.8);
+    border-radius: 10px;
+    width: 200px;
+}
+
+.titolo_chat{
+    border: 1px solid black;
+    vertical-align: middle;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(200,200,200,0.8);
+
+}
+
+.titolo_chat img{
+    width: 50px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.testo_chat {
+    padding: 20px 10px;
+}
+
+.scritta_chat{
+    float: right;
+}
+
+.scritta_chat, .help input{
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.help input{
+    max-width: 80%;
+    float: left;
+}
+
+.help:hover .chat{
+    display: block;
+}
+
+.help:hover #need_help{
+    display: none;
 }
