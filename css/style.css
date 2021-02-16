@@ -215,6 +215,10 @@ main h5{
     color: #5b6987;
 }
 
+.pallini li{
+    display: inline-block;
+}
+
 .pallini i{
     color: blue;
 }
@@ -388,30 +392,29 @@ font-size: 18px;
 
 #need_help{
     position: absolute;
-    top: -10px;
-    left: -97px;
-    background-color:rgba(255,255,255,0.5);
+    bottom: 30px;
+    right: 85px;
+    width: 120px;
+    text-align: center;
+    background-color:rgba(255,255,255,0.95);
     padding: 20px 15px;
-    border: 1px solid black;
+    border: 1px solid #f3f5f9;
     border-radius: 15px 25px;
 }
 
 .help .chat{
     display: none;
     position: absolute;
-    top: -125px;
-    left: -187px;
+    bottom: 30px;
+    right: 85px;
     background-color: rgba(168,168,168,0.8);
     border-radius: 10px;
     width: 200px;
 }
 
 .titolo_chat{
-    border: 1px solid black;
-    vertical-align: middle;
     border-radius: 10px 10px 0 0;
     background-color: rgba(200,200,200,0.8);
-
 }
 
 .titolo_chat img{
@@ -428,16 +431,17 @@ font-size: 18px;
     float: right;
 }
 
-.scritta_chat, .help input{
+.scritta_chat, .help textarea{
     background-color: white;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0;
 }
 
-.help input{
+.help textarea{
     max-width: 80%;
     float: left;
+    border: 0;
 }
 
 .help:hover .chat{
